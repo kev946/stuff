@@ -1,12 +1,16 @@
 set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set expandtab
+set autoindent
+set smarttab
 syntax on
+set showmatch
 set number
 set relativenumber
 set lazyredraw
-set showmatch
 set incsearch
 set hlsearch
-" turn off search highlight
-nnoremap ,<space> :nohlsearch<CR>
+nnoremap <space> :nohlsearch<cr>
+inoremap jj <esc>
 call pathogen#infect()
